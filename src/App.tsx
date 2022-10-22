@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import styles from "./App.module.scss";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import CodeCell from "./components/CodeCell/CodeCell";
+import TextCell from "./components/TextCell/TextCell";
+import "./scss/index.scss";
+import CellList from "./components/CellList/CellList";
+import Banner from "./components/Banner/Banner";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Banner />
+      <CellList />
     </div>
   );
 }

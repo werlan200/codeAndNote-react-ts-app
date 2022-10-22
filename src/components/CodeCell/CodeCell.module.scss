@@ -1,0 +1,28 @@
+.previewWrapper {
+  background-color: #ffffff;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.progressWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+  & progress {
+    accent-color: rgb(255, 176, 30);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
